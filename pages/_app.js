@@ -1,4 +1,6 @@
-import '../styles/build/styles.css';
+import '../styles/build/styles.css'
+import  "../styles/layout.css"
+
 import Layout from '../components/Layout'
 
 

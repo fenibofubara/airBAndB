@@ -2,3 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    @apply font-semibold border-2 py-3 px-8 rounded-md  text-xs  cursor-pointer tracking-wider border-brandGreen;
+}

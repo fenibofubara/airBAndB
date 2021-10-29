@@ -1,18 +1,36 @@
 import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
-import styles from '../styles/build/styles.css'
+// import Layout from '../styles/Layout.module.css'
+// import  "../styles/layout.css"
+
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Nutloop | Welcome</title>
+  
+  <>
+     <Head>
+        <title>Property Trade | Welcome</title>
         <meta name='keywords' content='login'/>
         <link rel="icon" href="/favicon.svg" />
      </Head>
-     <div className="mt-4 p-4 w-1/4 rounded bg-blue-300 text-center">
-        <p className="text-red-600">This should be very blue.</p>
-      </div>
-    </div>
+    <div id="banner">Banner</div>
+    <div id="slider">Slider</div>
+    <div id="propertyTrade">Property Trade</div>
+    <div id="propertyInvest">Property Invest</div>
+    <div id="defi">DEFI Staking</div>
+    <div id="cryptoBot">Crypto Bot Trade</div>
+    <div id="pfxAffiliate">PFX Affiliate</div>
+    <div id="how1">How it Works</div>
+    <div id="productCategories">Product Categories</div>
+    <div id="affiliateProgram">Affiliate Program</div>
+    <div id="how2">How it Works Two</div>
+    <div id="activate">Activate</div>
+    <div id="paidAffiliate">Paid Affiliate</div>
+    <div id="trusted">Trusted</div>
+    <div id="contact">Contact Us</div>
+  </>
+
+
+    
   )
 }
