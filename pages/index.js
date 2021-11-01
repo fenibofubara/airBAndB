@@ -8,6 +8,10 @@ import PropertyInvest from '../components/MainComponents/PropertyInvest/Property
 import DefiStaking from '../components/MainComponents/DefiStaking/DefiStaking'
 import CryptoBot from '../components/MainComponents/CryptoBot/CryptoBot'
 import PfxAffiliate from '../components/MainComponents/PfxAffiliate/PfxAffiliate'
+import HowItWorks from '../components/MainComponents/HowItWorks/HowItWorks'
+import ProductCategories from '../components/MainComponents/ProductCategories/ProductCategories'
+import AffiliateProgram from '../components/MainComponents/AffiliateProgram/AffiliateProgram'
+import HowItWorks2 from '../components/MainComponents/HowItWorks2/HowItWorks2'
 
 
 
@@ -41,10 +45,18 @@ export default function Home() {
     <section id="pfxAffiliate">
       <PfxAffiliate/>
     </section>
-    <section id="how1">How it Works</section>
-    <section id="productCategories">Product Categories</section>
-    <section id="affiliateProgram">Affiliate Program</section>
-    <section id="how2">How it Works Two</section>
+    <section id="how1">
+      <HowItWorks/>
+    </section>
+    <section id="productCategories">
+      <ProductCategories/>
+    </section>
+    <section id="affiliateProgram">
+      <AffiliateProgram/>
+    </section>
+    <section id="how2">
+      <HowItWorks2/>
+    </section>
     <section id="activate">Activate</section>
     <section id="paidAffiliate">Paid Affiliate</section>
     <section id="trusted">Trusted</section>
