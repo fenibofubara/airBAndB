@@ -12,9 +12,10 @@ module.exports = {
       backgroundImage: {
         'banner': "url('/images/banner.png')",
         'howVector': "url('/images/how-vector.png')",
+        'bannerPropertyInvest': "url('/images/propertyInvest/bg.png')",
        },
        fontSize: {
-        bannerText: '250px',
+        bannerText: '5rem',
        },
       
     },

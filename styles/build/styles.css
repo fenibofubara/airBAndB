@@ -17963,6 +17963,10 @@ video {
   background-image: url('/images/how-vector.png');
 }
 
+.bg-bannerPropertyInvest {
+  background-image: url('/images/propertyInvest/bg.png');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -22737,7 +22741,7 @@ video {
 }
 
 .text-bannerText {
-  font-size: 250px;
+  font-size: 5rem;
 }
 
 .font-thin {
@@ -32801,8 +32805,6 @@ video {
   cursor: pointer;
   border-radius: 0.375rem;
   border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgba(72, 100, 55, var(--tw-border-opacity));
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.75rem;
@@ -32811,6 +32813,21 @@ video {
   line-height: 1rem;
   font-weight: 600;
   letter-spacing: 0.05em;
+}
+
+.footer-item{
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-start;
+  padding-bottom: 0.25rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.footer-item:hover {
+  --tw-text-opacity: 1;
+  color: rgba(155, 133, 54, var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -50111,6 +50128,10 @@ video {
     background-image: url('/images/how-vector.png');
   }
 
+  .sm\:bg-bannerPropertyInvest {
+    background-image: url('/images/propertyInvest/bg.png');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -54885,7 +54906,7 @@ video {
   }
 
   .sm\:text-bannerText {
-    font-size: 250px;
+    font-size: 5rem;
   }
 
   .sm\:font-thin {
@@ -81879,6 +81900,10 @@ video {
     background-image: url('/images/how-vector.png');
   }
 
+  .md\:bg-bannerPropertyInvest {
+    background-image: url('/images/propertyInvest/bg.png');
+  }
+
   .md\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -86653,7 +86678,7 @@ video {
   }
 
   .md\:text-bannerText {
-    font-size: 250px;
+    font-size: 5rem;
   }
 
   .md\:font-thin {
@@ -113647,6 +113672,10 @@ video {
     background-image: url('/images/how-vector.png');
   }
 
+  .lg\:bg-bannerPropertyInvest {
+    background-image: url('/images/propertyInvest/bg.png');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -118421,7 +118450,7 @@ video {
   }
 
   .lg\:text-bannerText {
-    font-size: 250px;
+    font-size: 5rem;
   }
 
   .lg\:font-thin {
@@ -145415,6 +145444,10 @@ video {
     background-image: url('/images/how-vector.png');
   }
 
+  .xl\:bg-bannerPropertyInvest {
+    background-image: url('/images/propertyInvest/bg.png');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -150189,7 +150222,7 @@ video {
   }
 
   .xl\:text-bannerText {
-    font-size: 250px;
+    font-size: 5rem;
   }
 
   .xl\:font-thin {
@@ -177183,6 +177216,10 @@ video {
     background-image: url('/images/how-vector.png');
   }
 
+  .\32xl\:bg-bannerPropertyInvest {
+    background-image: url('/images/propertyInvest/bg.png');
+  }
+
   .\32xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -181957,7 +181994,7 @@ video {
   }
 
   .\32xl\:text-bannerText {
-    font-size: 250px;
+    font-size: 5rem;
   }
 
   .\32xl\:font-thin {

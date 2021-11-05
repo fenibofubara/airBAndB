@@ -1,17 +1,22 @@
 import Head from 'next/head'
 // import Layout from '../styles/Layout.module.css'
 // import  "../styles/layout.css"
-import Banner from '../components/MainComponents/Banner/Banner'
-import Sliderr from '../components/MainComponents/Slider/Slider'
-import PropertyTrade from '../components/MainComponents/PropertyTrade/PropertyTrade'
-import PropertyInvest from '../components/MainComponents/PropertyInvest/PropertyInvest'
-import DefiStaking from '../components/MainComponents/DefiStaking/DefiStaking'
-import CryptoBot from '../components/MainComponents/CryptoBot/CryptoBot'
-import PfxAffiliate from '../components/MainComponents/PfxAffiliate/PfxAffiliate'
-import HowItWorks from '../components/MainComponents/HowItWorks/HowItWorks'
-import ProductCategories from '../components/MainComponents/ProductCategories/ProductCategories'
-import AffiliateProgram from '../components/MainComponents/AffiliateProgram/AffiliateProgram'
-import HowItWorks2 from '../components/MainComponents/HowItWorks2/HowItWorks2'
+import Banner from '../components/MainComponents/Index/Banner/Banner'
+import Sliderr from '../components/MainComponents/Index/Slider/Slider'
+import PropertyTrade from '../components/MainComponents/Index/PropertyTrade/PropertyTrade'
+import PropertyInvest from '../components/MainComponents/Index/PropertyInvest/PropertyInvest'
+import DefiStaking from '../components/MainComponents/Index/DefiStaking/DefiStaking'
+import CryptoBot from '../components/MainComponents/Index/CryptoBot/CryptoBot'
+import PfxAffiliate from '../components/MainComponents/Index/PfxAffiliate/PfxAffiliate'
+import HowItWorks from '../components/MainComponents/Index/HowItWorks/HowItWorks'
+import ProductCategories from '../components/MainComponents/Index/ProductCategories/ProductCategories'
+import AffiliateProgram from '../components/MainComponents/Index/AffiliateProgram/AffiliateProgram'
+import HowItWorks2 from '../components/MainComponents/Index/HowItWorks2/HowItWorks2'
+import Activate from '../components/MainComponents/Index/Activate/Activate'
+import PaidAffiliate from '../components/MainComponents/Index/PaidAffiliate/PaidAffiliate'
+import Trusted from '../components/MainComponents/Index/Trusted/Trusted'
+import Contact from '../components/MainComponents/Index/Contact/Contact'
+
 
 
 
@@ -57,10 +62,18 @@ export default function Home() {
     <section id="how2">
       <HowItWorks2/>
     </section>
-    <section id="activate">Activate</section>
-    <section id="paidAffiliate">Paid Affiliate</section>
-    <section id="trusted">Trusted</section>
-    <section id="contact">Contact Us</section>
+    <section id="activate">
+      <Activate/>
+    </section>
+    <section id="paidAffiliate">
+      <PaidAffiliate/>
+    </section>
+    <section id="trusted">
+      <Trusted/>
+    </section>
+    <section id="contact">
+      <Contact/>
+    </section>
   </>
 
 

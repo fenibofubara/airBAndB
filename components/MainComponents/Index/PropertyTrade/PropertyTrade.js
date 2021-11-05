@@ -3,7 +3,7 @@ const PropertyTrade = () => {
     <>
   
    <section id="property-section">
-        <h6 className="uppercase  font-bold text-4xl text-center block text-black">Property Trade</h6>
+        <h6 className="uppercase  font-bold text-4xl text-center block text-black ">Property Trade</h6>
         <p className="px-80 font-semibold text-brandGreen">We developed a marketing App that trades properties of any real estate company across the 36 states
 of Nigeria</p>
     </section>
