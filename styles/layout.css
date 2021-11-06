@@ -114,3 +114,15 @@ footer{
 #heroImage{
   background:url('/images/banner.png')
 }
+
+#trusted{
+  grid-column:1/3;
+  margin-left:75px;
+  margin-right:75px
+}
+
+#firstBody{
+  grid-column:1/3;
+  margin-left:75px;
+  margin-right:75px
+}
