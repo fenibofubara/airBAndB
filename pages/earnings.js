@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Banner from '../components/MainComponents/PropertyInvest/Banner/Banner'
-import PartA from '../components/MainComponents/Terms/PartA/PartA'
+import Content from '../components/MainComponents/Disclaimer/Disclaimer'
 
 
 
@@ -23,7 +23,7 @@ export default function Earnings() {
     <Banner title='Our Earnings Disclaimer'/>
     </section>
     <section id="firstBody">
-    {/* <PartA/> */}
+    <Content/>
     
     </section>
 

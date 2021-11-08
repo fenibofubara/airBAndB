@@ -12,7 +12,7 @@ export default function Sliderr() {
                 <CarouselProvider className="lg:block hidden" naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={5} visibleSlides={2} step={1} infinite={true}>
                     <div className="w-full relative flex items-center justify-center">
                         <ButtonBack role="button" aria-label="slide backward" className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-white focus:ring-2 focus:ring-offset-2 focus:ring-white cursor-pointer" id="prev">
-                            <svg width={8} height={14} class=" bg-brandGreen" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width={8} height={14} className=" bg-brandGreen" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 1L1 7L7 13" stroke="white" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </ButtonBack>

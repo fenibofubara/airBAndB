@@ -17963,7 +17963,11 @@ video {
   background-image: url('/images/how-vector.png');
 }
 
-.bg-bannerPropertyInvest {
+.bg-authBanner {
+  background-image: url('/images/bannerRegister.png');
+}
+
+.bg-otherBackGround {
   background-image: url('/images/propertyInvest/bg.png');
 }
 
@@ -50128,7 +50132,11 @@ video {
     background-image: url('/images/how-vector.png');
   }
 
-  .sm\:bg-bannerPropertyInvest {
+  .sm\:bg-authBanner {
+    background-image: url('/images/bannerRegister.png');
+  }
+
+  .sm\:bg-otherBackGround {
     background-image: url('/images/propertyInvest/bg.png');
   }
 
@@ -81900,7 +81908,11 @@ video {
     background-image: url('/images/how-vector.png');
   }
 
-  .md\:bg-bannerPropertyInvest {
+  .md\:bg-authBanner {
+    background-image: url('/images/bannerRegister.png');
+  }
+
+  .md\:bg-otherBackGround {
     background-image: url('/images/propertyInvest/bg.png');
   }
 
@@ -113672,7 +113684,11 @@ video {
     background-image: url('/images/how-vector.png');
   }
 
-  .lg\:bg-bannerPropertyInvest {
+  .lg\:bg-authBanner {
+    background-image: url('/images/bannerRegister.png');
+  }
+
+  .lg\:bg-otherBackGround {
     background-image: url('/images/propertyInvest/bg.png');
   }
 
@@ -145444,7 +145460,11 @@ video {
     background-image: url('/images/how-vector.png');
   }
 
-  .xl\:bg-bannerPropertyInvest {
+  .xl\:bg-authBanner {
+    background-image: url('/images/bannerRegister.png');
+  }
+
+  .xl\:bg-otherBackGround {
     background-image: url('/images/propertyInvest/bg.png');
   }
 
@@ -177216,7 +177236,11 @@ video {
     background-image: url('/images/how-vector.png');
   }
 
-  .\32xl\:bg-bannerPropertyInvest {
+  .\32xl\:bg-authBanner {
+    background-image: url('/images/bannerRegister.png');
+  }
+
+  .\32xl\:bg-otherBackGround {
     background-image: url('/images/propertyInvest/bg.png');
   }
 

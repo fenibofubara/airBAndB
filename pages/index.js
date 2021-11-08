@@ -29,13 +29,13 @@ export default function Home() {
         <meta name='keywords' content='login'/>
         <link rel="icon" href="/images/logo.png" />
      </Head>
-    <section id="banner">
+    {/* <section id="banner">
       <Banner/>
     </section>
     <section id="slider">
       <Sliderr/>
-    </section>
-    <section id="propertyTrade">
+    </section> */}
+    {/* <section id="propertyTrade">
       <PropertyTrade/>
     </section>
     <section id="propertyInvest">
@@ -73,7 +73,8 @@ export default function Home() {
     </section>
     <section id="contact">
       <Contact/>
-    </section>
+    </section> */}
+  
   </>
 
 

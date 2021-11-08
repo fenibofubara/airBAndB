@@ -8,11 +8,11 @@ const data = [{id:1,image:'sunshine',title:'Sunshine City Estate',location:'Uzua
 const Overview = () => {
     return ( 
      <>
-     <div className="grid grid-cols-2 gap-2  mx-20">
+     <div className="grid md:grid-cols-2 gap-2  md:mx-20">
     {data.length !=0? (data.map((data,index)=>{
-    return  <div className="flex border-1 shadow-md border-gray-500 rounded-md" key={data.id}>
-             <div className="pt-3 px-3">
-             <img src={`/images/${data.image}.png`} className=""/>
+    return  <div className="md:flex border-1 shadow-md border-gray-500 rounded-md" key={data.id}>
+             <div className="pt-3 px-3 ">
+             <img src={`/images/${data.image}.png`} className="w-full"/>
              </div>
              <div className="pt-3 px-3">
                 <h1 className="text-brandGreen font-semibold text-lg ">{data.title}</h1>

@@ -7,10 +7,10 @@ const data = [{id:1,image:'mall',location:'Opp. Int’l Airport IPO, Port Harcou
 const Items = () => {
     return ( 
         <>
-            <div className="grid grid-cols-3 gap-4 px-40 py-10 bg-gradient-to-b from-white via-white to-blue-100">
+            <div className="grid md:grid-cols-3 gap-4 px-6 md:px-40 py-10 bg-gradient-to-b from-white via-white to-blue-100">
        
                 {data.length !=0? (data.map((data,index)=>{
-       return  <div className="rounded-md relative">
+       return  <div className="rounded-md relative" key={data.id}>
                 <img src="/images/mall.png" className=" w-full rounded transform hover:scale-150 hover:z-30"/>
                 <div className="absolute btn bg-brandGreen border-brandGreen text-white inset-x-24 top-56">Order</div>
                 <div className="bg-white py-10 font-semibold">

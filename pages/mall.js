@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Banner from '../components/MainComponents/PropertyInvest/Banner/Banner'
-import Items from '../components/MainComponents/Mall/Items/Items'
+import Items from '../components/MainComponents/PropertyInvest/Items/Items'
 
 
 

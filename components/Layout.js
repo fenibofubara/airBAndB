@@ -1,9 +1,22 @@
 import Head from 'next/head';
+import { useState,useEffect} from 'react';
 import Footer from "../components/Footer/Footer"
 import TopNavbar from "../components/Navbar/TopNavbar"
 
 
 const Layout = ({ children }) => {
+const [state, setstate] = useState(0)
+useEffect(() => {
+    const path = window.location.pathname
+    console.log(path,'pathhh')
+    if(path == '/register'){setstate(1)}
+    if(path == '/login'){setstate(1)}
+    if(path == '/resetPassword'){setstate(1)}
+    if(path == '/paymentConfirmation'){setstate(1)}
+    
+  
+}, [])
+
   return (
     <>
       <Head>
@@ -11,7 +24,7 @@ const Layout = ({ children }) => {
       </Head>
       <div className="body">
       <div className="content" id="content">
-       <TopNavbar/>
+      {state == '0' && ( <TopNavbar/>)}
             {children}
         <Footer/>
       </div>

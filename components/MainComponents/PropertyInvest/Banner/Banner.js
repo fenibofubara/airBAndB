@@ -2,9 +2,8 @@ const Banner = ({title}) => {
     return ( 
         <>
        
-            <div className="bg-gray-200 relative">
-            <img src="/images/propertyInvest/bg.png"/>
-            <span className="absolute text-brandGreen font-semibold text-4xl top-28 inset-x-1/4">{title}</span>
+            <div className="bg-gray-200  bg-otherBackGround h-60 bg-no-repeat bg-cover flex justify-center">
+            <span className="place-self-center  text-brandGreen text-4xl font-semibold  ">{title}</span>
             </div>
             
 
