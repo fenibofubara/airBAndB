@@ -21,6 +21,10 @@ module.exports = {
        margin: {
         pfx: '75px',
        
+       },
+       padding: {
+        pfx: '75px',
+       
        }
       
     },

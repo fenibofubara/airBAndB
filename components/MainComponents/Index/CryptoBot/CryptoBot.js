@@ -3,12 +3,12 @@ const CryptoBot = () => {
     <>
        <div >
         <h6 className="uppercase  font-bold text-4xl text-center block text-black pt-20">Crypto-Bot Trade</h6>
-        <p className="px-80 font-semibold text-brandGreen">We provide you quantitative trading system to realize automatic intelligent trading</p>
+        <p className="md:px-80 font-semibold text-brandGreen">We provide you quantitative trading system to realize automatic intelligent trading</p>
     </div>
-    <div className="grid grid-cols-2  justify-between text-brandGreen  my-8  ">
-       <div className="justify-self-start ">
+    <div className="grid md:grid-cols-2  md:justify-between text-brandGreen  my-8  ">
+       <div className="md:justify-self-start ">
        <div className="text-justify text-10">
-       <h1 className="text-black font-bold pb-2">Quantitative trading with Bot</h1>
+       <h1 className="text-black font-bold pb-2 text-center">Quantitative trading with Bot</h1>
        It is a one-click to start the quantitative trading system, realize automatic intelligent trading, real-time monitoring and tracking of big data algorithms,
 adjust real-time market conditions, the best quantitative strategy to stop
 losses, and maximize user profits, with technical strategy such as built-in
@@ -23,12 +23,12 @@ grid Take profit. <span className="text-brandYellow">Continuous income is guaran
         <div className="btn bg-brandGreen bg-opacity-100 text-white mt-5 hover:shadow-inner shadow-md transition duration-500  hover:bg-opacity-90">Join Now</div>
         </div>
        </div>
-        <div className="justify-self-end">
+        <div className="justify-self-end mt-4 md:mt-0">
         <img className="rounded-3xl " src="/images/crytoBot.png"/>
         </div>
     </div>
 
-<div className="grid grid-cols-3  justify-between place-items-center transform scale-90">
+<div className="grid md:grid-cols-3  md:justify-between md:place-items-center transform scale-90">
     <div className="relative">
           <span className="grid justify-items-center">
           <img src="/images/join.png" className="h-40 "/> 
@@ -52,7 +52,7 @@ grid Take profit. <span className="text-brandYellow">Continuous income is guaran
     </div>
 </div>
 
-<div className="grid grid-cols-2  gap-10  my-8 mx-40 transform scale-90">
+<div className="grid md:grid-cols-2  md:gap-10  md:my-8 md:mx-40 transform scale-90">
 <div className="relative grid ">
           <span className="grid justify-items-center">
           <img src="/images/join.png" className="h-40 "/> 

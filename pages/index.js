@@ -35,33 +35,36 @@ export default function Home() {
       {/*<section id="slider">
       <Sliderr/>
     </section> */}
- <section id="propertyTrade" className="md:mx-pfx">
+ <section id="propertyTrade" className="md:mx-pfx mx-4">
       <PropertyTrade/>
     </section>
        <section id="propertyInvest">
       <PropertyInvest/>
     </section>
-    <section id="defi">
+    <section id="defi" className="md:mx-pfx mx-4">
       <DefiStaking/>
     </section>
-       {/*  <section id="cryptoBot">
+  <section id="cryptoBot" className="md:mx-pfx mx-4">
       <CryptoBot/>
     </section>
-    <section id="pfxAffiliate">
+    <section id="pfxAffiliate" className="md:mx-pfx mx-4">
       <PfxAffiliate/>
     </section>
-    <section id="how1">
+    <section id="how1" className="md:mx-pfx mx-4">
       <HowItWorks/>
     </section>
+{/*   
     <section id="productCategories">
       <ProductCategories/>
-    </section>
-    <section id="affiliateProgram">
+    </section> */}
+   
+    <section id="affiliateProgram" className="md:mx-pfx mx-4">
       <AffiliateProgram/>
     </section>
-    <section id="how2">
+      {/* <section id="how2">
       <HowItWorks2/>
-    </section>
+    </section> */}
+     {/* 
     <section id="activate">
       <Activate/>
     </section>
@@ -70,10 +73,10 @@ export default function Home() {
     </section>
     <section id="trusted">
       <Trusted/>
-    </section>
-    <section id="contact">
+    </section>*/}
+    <section id="contact" className="md:p-pfx p-4">
       <Contact/>
-    </section> */}
+    </section> 
   
   </>
 

@@ -1,9 +1,9 @@
 const Contact = () => {
     return ( 
         <>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
             <div className=" grid grid-cols-1 ">
-            <div className=" grid text-left " >
+            <div className=" grid md:text-left " >
     <h6 className="font-bold text-4xl text-black ">Contact Us
      </h6>
      <p className="text-brandGreen text-justify">Our help line is 24hrs open to receive any inquiry or feedback. Please feel free to drop us an email from the form below and we will get back to you as soon as we can</p>
