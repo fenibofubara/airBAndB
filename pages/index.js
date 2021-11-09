@@ -29,22 +29,22 @@ export default function Home() {
         <meta name='keywords' content='login'/>
         <link rel="icon" href="/images/logo.png" />
      </Head>
-    {/* <section id="banner">
+   <section id="banner">
       <Banner/>
     </section>
-    <section id="slider">
+      {/*<section id="slider">
       <Sliderr/>
     </section> */}
-    {/* <section id="propertyTrade">
+ <section id="propertyTrade" className="md:mx-pfx">
       <PropertyTrade/>
     </section>
-    <section id="propertyInvest">
+       <section id="propertyInvest">
       <PropertyInvest/>
     </section>
     <section id="defi">
       <DefiStaking/>
     </section>
-    <section id="cryptoBot">
+       {/*  <section id="cryptoBot">
       <CryptoBot/>
     </section>
     <section id="pfxAffiliate">

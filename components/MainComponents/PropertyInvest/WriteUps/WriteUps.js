@@ -1,7 +1,7 @@
 const WriteUps = () => {
     return ( 
         <>
-                        <div className="px-20 pt-4" >
+               <div className="md:px-20 px-4 pt-4" >
                 <h1 className="text-black py-6 font-semibold flex text-start text-lg">PROFITABLE REAL ESTATE INVESTMENT FOR ALL</h1>
                 <div className="flex text-justify text-brandGreen text-lg ">
                 The Property Invest Product model aims at bequeathing the benefits of real estate investment without physical acquisition of property or
@@ -29,11 +29,11 @@ Investment
 
             </div>
 
-            <div className="px-20 pt-4" >
+            <div className="md:px-20 pt-4 px-4" >
              
 
-                <h1 className="text-black pt-10 font-semibold flex text-start text-lg uppercase">Property Invest is secure, as we offer several security instruments for  </h1>
-                <h1 className="text-black  font-semibold flex text-start text-lg uppercase">investors:</h1>
+                <h1 className="text-black pt-10 font-semibold flex md:text-start text-lg uppercase">Property Invest is secure, as we offer several security instruments for  </h1>
+                <h1 className="text-black  font-semibold md:flex md:text-start text-lg uppercase">investors:</h1>
 
                 <ul className="mx-0 px-0 text-brandGreen text-lg pt-4 pl-4">
             <li className=" flex mb-4" > <span className="inline-block pr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor">

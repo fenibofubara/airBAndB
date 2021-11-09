@@ -18,6 +18,10 @@ module.exports = {
        fontSize: {
         bannerText: '5rem',
        },
+       margin: {
+        pfx: '75px',
+       
+       }
       
     },
   },
