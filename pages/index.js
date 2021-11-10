@@ -29,12 +29,12 @@ export default function Home() {
         <meta name='keywords' content='login'/>
         <link rel="icon" href="/images/logo.png" />
      </Head>
-   <section id="banner">
+   <section id="banner" >
       <Banner/>
     </section>
-      {/*<section id="slider">
+      <section id="slider" className="md:mx-pfx">
       <Sliderr/>
-    </section> */}
+    </section>
  <section id="propertyTrade" className="md:mx-pfx mx-4">
       <PropertyTrade/>
     </section>
@@ -53,27 +53,26 @@ export default function Home() {
     <section id="how1" className="md:mx-pfx mx-4">
       <HowItWorks/>
     </section>
-{/*   
-    <section id="productCategories">
+  
+    <section id="productCategories" className="md:mx-pfx">
       <ProductCategories/>
-    </section> */}
+    </section>
    
     <section id="affiliateProgram" className="md:mx-pfx mx-4">
       <AffiliateProgram/>
     </section>
-      {/* <section id="how2">
+      <section id="how2" className="md:mx-pfx mx-4">
       <HowItWorks2/>
-    </section> */}
-     {/* 
-    <section id="activate">
+    </section>
+    <section id="activate" className="md:mx-pfx mx-4">
       <Activate/>
     </section>
-    <section id="paidAffiliate">
+    <section id="paidAffiliate" className="md:mx-pfx mx-4">
       <PaidAffiliate/>
     </section>
-    <section id="trusted">
+    <section id="trusted" className="md:mx-pfx" >
       <Trusted/>
-    </section>*/}
+    </section>
     <section id="contact" className="md:p-pfx p-4">
       <Contact/>
     </section> 

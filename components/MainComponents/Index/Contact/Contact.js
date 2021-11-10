@@ -19,7 +19,7 @@ const Contact = () => {
        
 <form className="">
   <div className="flex flex-wrap  mb-2">
-    <div className="w-full md:w-1/2 px-1 mb-6 md:mb-0">
+    <div className="w-full md:w-1/2 px-1  ">
      
       <input className="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Name"/>
 
@@ -30,7 +30,7 @@ const Contact = () => {
     </div>
   </div>
   <div className="flex flex-wrap  mb-2 ">
-    <div className="w-full md:w-1/2 px-1 mb-6 md:mb-0">
+    <div className="w-full md:w-1/2 px-1 ">
      
       <input className="appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Phone Number"/>
 
@@ -49,12 +49,12 @@ const Contact = () => {
     </div>
   </div>
   <div className="flex flex-wrap  mb-3 md:items-center">
-    <div className="pl-1">
-      <button className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-20 rounded bg-brandGreen w-full" type="button">
+    <div className="pl-1 w-full md:w-auto">
+      <button className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 md:px-20 rounded bg-brandGreen w-full" type="button">
         Submit
       </button>
     </div>
-    <div className="md:w-2/3"></div>
+   
   </div>
 </form>
 

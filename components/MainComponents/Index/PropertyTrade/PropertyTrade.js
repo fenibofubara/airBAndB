@@ -1,9 +1,10 @@
+import Link from 'next/link'
 const PropertyTrade = () => {
     return ( 
     <>
-  
-    <section id="property-section" className="md:mx-pfx mx-4">
-        <h1 className="uppercase text-xl font-bold md:text-4xl text-center block text-black ">Property Trade</h1>
+
+    <section id="property-section" className=" ">
+        <h1 className="uppercase text-4xl font-bold md:text-4xl text-center block text-black ">Property Trade</h1>
         <p className="md:px-80 md:font-semibold text-brandGreen">We developed a marketing App that trades properties of any real estate company across the 36 states
 of Nigeria</p>
     </section> 
@@ -33,7 +34,7 @@ of Nigeria</p>
       
         <div className="mt-24">
         <h1 className="font-bold text-4xl text-brandGreen">We Got You Covered</h1>
-        <div className="btn bg-brandGreen bg-opacity-100 text-white mt-5 hover:shadow-inner shadow-md transition duration-500  hover:bg-opacity-90">View Available Product</div>
+        <div className="btn bg-brandGreen bg-opacity-100 text-white mt-5 hover:shadow-inner shadow-md transition duration-500  hover:bg-opacity-90"><Link href='mall'>View Available Product</Link></div>
         </div>
        </div>
         <div>

@@ -6,7 +6,7 @@ const Banner = () => {
            
             <div className="border-gray-500 mx-4   rounded-md shadow-md mb-40 mt-20 pb-10 px-6 bg-white md:w-1/2  z-20">
             <div className="grid justify-center mt-4">
-            <img src="/images/logo.png" />
+            <img src="/images/logo.png"/>
             </div>
             <div className="grid justify-center mb-4 ">
             <span className="text-brandGreen font-semibold">Reset Password</span>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const Banner = () => {
     return ( 
         <>
@@ -53,14 +54,14 @@ const Banner = () => {
   <option value="southafrica">South Africa</option>
   <option value="amarica">America</option>
 </select>
-<span className="">By registering you agree to have read our <span className="md:p-2 mt-8 border-red-700 text-red-700 rounded-md border-2 cursor-pointer">Terms & Condition</span></span>
+<span className="">By registering you agree to have read our <span className="md:p-2 mt-8 border-red-700 text-red-700 rounded-md border-2 cursor-pointer"><Link href='terms'>Terms & Condition</Link></span></span>
     <div className="pl-1 mt-4">
       <button className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 rounded bg-brandGreen w-full" type="button">
         Register
       </button>
     
     </div>
-    <span className="flex justify-center w-full">Already have an account? <a href="#" className="text-brandGreen px-2">Login</a></span>
+    <span className="flex justify-center w-full">Already have an account? <Link href="/login">Login</Link></span>
 
     </div>
   </div>

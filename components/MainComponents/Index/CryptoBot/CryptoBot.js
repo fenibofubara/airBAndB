@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const CryptoBot = () => {
     return (
     <>
@@ -20,7 +21,7 @@ grid Take profit. <span className="text-brandYellow">Continuous income is guaran
       
         <div className="mt-24">
      
-        <div className="btn bg-brandGreen bg-opacity-100 text-white mt-5 hover:shadow-inner shadow-md transition duration-500  hover:bg-opacity-90">Join Now</div>
+        <div className="btn bg-brandGreen bg-opacity-100 text-white mt-5 hover:shadow-inner shadow-md transition duration-500  hover:bg-opacity-90"><Link href='register'>Join Now</Link></div>
         </div>
        </div>
         <div className="justify-self-end mt-4 md:mt-0">

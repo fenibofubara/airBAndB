@@ -1,9 +1,10 @@
 import Image from 'next/image'
+import Link from 'next/link'
 const Banner = () => {
     return ( 
         <>
        
-            <div className="flex flex-wrap justify-center bg-authBanner border-b border-gray-300 ">
+            <div className="flex flex-wrap justify-center bg-authBanner border-b  border-gray-300 ">
           
             {/* absolute top-6  */}
             <div className=" border-gray-500   rounded-md shadow-md mb-40 mt-10 pb-10 px-6 bg-white md:w-1/3  z-20">
@@ -23,14 +24,14 @@ const Banner = () => {
   <div className="flex flex-wrap  mb-3">
     <div className="w-full px-1">
     <input className="appearance-none  w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-brandGreen mb-4" id="grid-last-name" type="text" placeholder="Password"/>
-    <span className="flex justify-start">Forgot Password?</span>
+    <span className="flex justify-start"><Link href='/resetPassword'>Forgot Password?</Link></span>
     <div className="pl-1 mt-4">
       <button className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 rounded bg-brandGreen w-full" type="button">
         Login
       </button>
     
     </div>
-    <span className="flex justify-center w-full">Don't have an account? <a href="/register" className="text-brandGreen px-2">Register</a></span>
+    <span className="flex justify-center w-full">Don't have an account? <Link href="/register" >Register</Link></span>
 
     </div>
   </div>

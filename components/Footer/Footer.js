@@ -1,19 +1,21 @@
 // import  "../../styles/layout.css"
+import Link from 'next/link'
 const Footer = () => {
     return ( 
         <>
         <footer className="pt-12 ">
+     
         <div className="grid md:grid-cols-7  text-black ">
             <div className="flex justify-center  md:col-start-1 md:col-end-4  border-b border-brandYellow mb-4 "><img src="/images/logoFooter.png"/></div>
             <div className=" md:col-start-4 md:col-end-5  border-b border-brandYellow mb-4  ">
                 <h1 className="font-semibold flex justify-start pb-3 text-brandGreen ">Quick Links</h1>
                 <ul className="">
-                    <li className="footer-item">Register</li>
-                    <li className="footer-item">Terms & Conditions</li>
-                    <li className="footer-item">Refund Policy</li>
-                    <li className="footer-item">Refund Policy</li>
-                    <li className="footer-item">Earning Disclaime</li>
-                    <li className="footer-item mb-4 md:mb-0">Privacy Policy</li>
+                    <li className="footer-item"><Link href='register'>Register</Link></li>
+                    <li className="footer-item"><Link href='terms'>Terms & Conditions</Link></li>
+                    <li className="footer-item"><Link href='refundPolicy'>Refund Policy</Link></li>
+                    <li className="footer-item"><Link href='refundPolicy'>Refund Policy</Link></li>
+                    <li className="footer-item"><Link href='earnings'>Earning Disclaimer</Link></li>
+                    <li className="footer-item mb-4 md:mb-0"><Link href='privacy'>Privacy Policy</Link></li>
 
                 </ul>
             </div>
@@ -43,10 +45,12 @@ const Footer = () => {
                 <img src="/images/youtube.png" className="absolute right-1.5 w-6 top-1.5"/>
                 </div>
                 <div className=" relative px-2  border-2 rounded-full w-10 h-10 border-brandGreen cursor-pointer mr-2 ">
-                <img src="/images/fb.png" className="absolute right-1.5 w-6 top-1.5"/>
+                <Link href="https://web.facebook.com/pfxnet"><img src="/images/fb.png" className="absolute right-1.5 w-6 top-1.5"/></Link>
+                
                 </div>
                 <div className=" relative px-2  border-2 rounded-full w-10 h-10 border-brandGreen cursor-pointer mr-2 ">
-                <img src="/images/twitter.png" className="absolute right-1.5 w-6 top-1.5"/>
+                <Link href='https://www.twitter.com/pfxnet'><img src="/images/twitter.png" className="absolute right-1.5 w-6 top-1.5"/></Link>
+                
                 </div>
                 <div className=" relative px-2  border-2 rounded-full w-10 h-10 border-brandGreen cursor-pointer mr-2 ">
                 <img src="/images/instagram.png" className="absolute right-1.5 w-6 top-1.5"/>

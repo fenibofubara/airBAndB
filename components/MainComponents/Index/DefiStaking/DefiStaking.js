@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const DefiStaking = () => {
     return ( 
     <>
@@ -19,7 +20,7 @@ An ecosystem includes: Web Wallet, Multi-chain blockchain system, Swap platform,
       
         <div className="mt-24">
         <h1 className="font-bold  text-brandGreen text-justify">The platform is designed to provide multiple opportunities & benefits for its <span className="text-brandYellow">investors, traders, and users to earn profit daily.</span> </h1>
-        <div className="btn bg-brandGreen bg-opacity-100 text-white mt-5 hover:shadow-inner shadow-md transition duration-500  hover:bg-opacity-90">Join Now</div>
+        <div className="btn bg-brandGreen bg-opacity-100 text-white mt-5 hover:shadow-inner shadow-md transition duration-500  hover:bg-opacity-90"><Link href='register'>Join Now</Link></div>
         </div>
        </div>
         <div className="md:justify-self-end my-4 md:my-0">
