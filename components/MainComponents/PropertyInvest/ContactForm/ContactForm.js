@@ -17,10 +17,9 @@ const ContactForm = () => {
     const email = e.target.email.value
     const phone = e.target.phone.value
     const state = e.target.state.value
-    const investTime = e.target.whenInvest.value
+    const whenInvest = e.target.whenInvest.value
     const message = e.target.message.value
-    
-    const data = {name,email,phone,state,investTime,message}
+    const data = {name,email,phone,state,whenInvest,message}
     // const check = Object.keys(data).map(key => {
     //   if(data[key] == "") {
     //      return toast.error(`${data[key]} is needed to continue!`)

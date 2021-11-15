@@ -27,15 +27,16 @@ const Trusted = () => {
                             <Slider>
                                 <div id="slider" className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
-                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
                                     <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
                                            
                                             <div className="flex gap-2 flex-wrap">
                                                 <div>
-                                                    <img src="/images/customer1.png"/>
+                                                    <img src="/images/fenibo.jpeg" className="w-10 rounded-full"/>
                                                 </div>
                                                 <div className="grid text-left">
-                                                    <span className="font-semibold text-black block">Viezh Robert</span>
+                                                    <span className="font-semibold text-black block">Fenibo</span>
+                                                    <span className="text-gray-800">Software Engineer</span>
                                                     <span className="text-gray-800">Lagos</span>
                                                 </div>
                                             </div>
@@ -48,22 +49,23 @@ const Trusted = () => {
                                         </div>
                                         <div className="mt-4">
                                          <p className="flex text-justify text-brandGreen">
-                                         “Wow... I am very happy to use this Product, it turned out to be more than my expectations and so far there have been no problems.
+                                         “Pfxnet is worth investing in. I see great prospects with them
                                     
                                          </p>
                                         </div>
                                     </div>
                                     </Slide>
                                     <Slide index={1}>
-                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
                                     <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
                                            
                                             <div className="flex gap-2 flex-wrap">
                                                 <div>
-                                                    <img src="/images/customer1.png"/>
+                                                    <img src="/images/chris.jpg" className="w-10 rounded-full"/>
                                                 </div>
                                                 <div className="grid text-left">
-                                                    <span className="font-semibold text-black block">Viezh Robert</span>
+                                                    <span className="font-semibold text-black block">Chris Chukwuemeka Mazi.</span>
+                                                    <span className="text-gray-800"> Engineer</span>
                                                     <span className="text-gray-800">Lagos</span>
                                                 </div>
                                             </div>
@@ -76,23 +78,24 @@ const Trusted = () => {
                                         </div>
                                         <div className="mt-4">
                                          <p className="flex text-justify text-brandGreen">
-                                         “Wow... I am very happy to use this Product, it turned out to be more than my expectations and so far there have been no problems.
+                                         “ PropertyFx is simply amazing, with their simplified process of acquiring lands and house hold property, I am already on my way to becoming a landlord and  with her unique and mutually beneficial Mono-line system my issue of cash is solved. I recommend you join and experience the success that comes with PropertyFx..
                                     
                                          </p>
                                         </div>
                                     </div>
                                     </Slide>
                                     <Slide index={2}>
-                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
                                     <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
                                            
                                             <div className="flex gap-2 flex-wrap">
                                                 <div>
-                                                    <img src="/images/customer1.png"/>
+                                                    <img src="/images/christy.jpg" className="w-10 rounded-full"/>
                                                 </div>
                                                 <div className="grid text-left">
-                                                    <span className="font-semibold text-black block">Viezh Robert</span>
-                                                    <span className="text-gray-800">Lagos</span>
+                                                    <span className="font-semibold text-black block">Christy Ichella .</span>
+                                                    <span className="text-gray-800">Civil servant </span>
+                                                    <span className="text-gray-800">Rivers State</span>
                                                 </div>
                                             </div>
                                             <div className="grid grid-cols-2 gap-2">
@@ -104,23 +107,24 @@ const Trusted = () => {
                                         </div>
                                         <div className="mt-4">
                                          <p className="flex text-justify text-brandGreen">
-                                         “Wow... I am very happy to use this Product, it turned out to be more than my expectations and so far there have been no problems.
+                                         “Property fx is the best system. It is uniquely designed to help you get Cash, lands and household Properties in the most simplest and affordable way. I am proud to say that I am immensely benefitting from this system. Sometimes, you have to make sacrifices to win with money. So, I want to encourage you all to register with Property fx and have a taste of the goodies.
                                     
                                          </p>
                                         </div>
                                     </div>
                                     </Slide>
                                     <Slide index={3}>
-                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
                                     <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
                                            
                                             <div className="flex gap-2 flex-wrap">
                                                 <div>
-                                                    <img src="/images/customer1.png"/>
+                                                    <img src="/images/lucky.jpg" className="w-10 rounded-full"/>
                                                 </div>
                                                 <div className="grid text-left">
-                                                    <span className="font-semibold text-black block">Viezh Robert</span>
-                                                    <span className="text-gray-800">Lagos</span>
+                                                    <span className="font-semibold text-black block">Lucky Efi.</span>
+                                                    <span className="text-gray-800">System Analyst</span>
+                                                    <span className="text-gray-800">Rivers State</span>
                                                 </div>
                                             </div>
                                             <div className="grid grid-cols-2 gap-2">
@@ -132,24 +136,24 @@ const Trusted = () => {
                                         </div>
                                         <div className="mt-4">
                                          <p className="flex text-justify text-brandGreen">
-                                         “Wow... I am very happy to use this Product, it turned out to be more than my expectations and so far there have been no problems.
+                                         “With PropertyFx: I feel on top of the world, I feel incredible, I feel motivated, I feel empowered. Join Pfx and experience the same feelings for yourself..
                                     
                                          </p>
                                         </div>
                                     </div>
                                     </Slide>
                                     <Slide index={4}>
-                                     
-                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
                                     <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
                                            
                                             <div className="flex gap-2 flex-wrap">
                                                 <div>
-                                                    <img src="/images/customer1.png"/>
+                                                    <img src="/images/udo.jpeg" className="w-10 rounded-full"/>
                                                 </div>
                                                 <div className="grid text-left">
-                                                    <span className="font-semibold text-black block">Viezh Robert</span>
-                                                    <span className="text-gray-800">Lagos</span>
+                                                    <span className="font-semibold text-black block">Mrs Udo Chika</span>
+                                                    <span className="text-gray-800">Teacher</span>
+                                                    <span className="text-gray-800">Rivers State</span>
                                                 </div>
                                             </div>
                                             <div className="grid grid-cols-2 gap-2">
@@ -161,11 +165,12 @@ const Trusted = () => {
                                         </div>
                                         <div className="mt-4">
                                          <p className="flex text-justify text-brandGreen">
-                                         “Wow... I am very happy to use this Product, it turned out to be more than my expectations and so far there have been no problems.
+                                         “ProperFX has transformed me financially since I  signed up as an affiliate, with pfx, the sky is just the starting point and the best is yet to come!!!
                                     
                                          </p>
                                         </div>
                                     </div>
+                                    
                                     </Slide>
                             
                                 </div>
@@ -197,59 +202,150 @@ const Trusted = () => {
                             <Slider>
                                 <div id="slider" className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
-                                        <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="/images/1.png" alt="black chair and white table" className="object-cover object-center w-full" />
-                                            <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Catalog 1</h2>
-                                                <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Minimal Interior</h3>
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
+                                           
+                                            <div className="flex gap-2 flex-wrap">
+                                                <div>
+                                                    <img src="/images/fenibo.jpeg" className="w-10 rounded-full"/>
+                                                </div>
+                                                <div className="grid text-left">
+                                                    <span className="font-semibold text-black block">Fenibo</span>
+                                                    <span className="text-gray-800">Software Engineer</span>
+                                                    <span className="text-gray-800">Lagos</span>
                                                 </div>
                                             </div>
+                                            <div className="grid grid-cols-2 gap-2">
+                                            <span className="">4.5</span>
+                                            <span className=" pt-1"><img src="/images/star.png " className="w-4"/></span>
+
+                                            </div>
+                                      
                                         </div>
+                                        <div className="mt-4">
+                                         <p className="flex text-justify text-brandGreen">
+                                         “Pfxnet is worth investing in. I see great prospects with them
+                                    
+                                         </p>
+                                        </div>
+                                    </div>
                                     </Slide>
                                     <Slide index={1}>
-                                        <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="/images/2.png" alt="sitting area" className="object-cover object-center w-full" />
-                                            <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Catalog 2</h2>
-                                                <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Minimal Interior</h3>
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
+                                           
+                                            <div className="flex gap-2 flex-wrap">
+                                                <div>
+                                                    <img src="/images/chris.jpg" className="w-10 rounded-full"/>
+                                                </div>
+                                                <div className="grid text-left">
+                                                    <span className="font-semibold text-black block">Chris Chukwuemeka Mazi.</span>
+                                                    <span className="text-gray-800"> Engineer</span>
+                                                    <span className="text-gray-800">Lagos</span>
                                                 </div>
                                             </div>
+                                            <div className="grid grid-cols-2 gap-2">
+                                            <span className="">4.5</span>
+                                            <span className=" pt-1"><img src="/images/star.png " className="w-4"/></span>
+
+                                            </div>
+                                      
                                         </div>
+                                        <div className="mt-4">
+                                         <p className="flex text-justify text-brandGreen">
+                                         “ PropertyFx is simply amazing, with their simplified process of acquiring lands and house hold property, I am already on my way to becoming a landlord and  with her unique and mutually beneficial Mono-line system my issue of cash is solved. I recommend you join and experience the success that comes with PropertyFx..
+                                    
+                                         </p>
+                                        </div>
+                                    </div>
                                     </Slide>
                                     <Slide index={2}>
-                                        <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="/images/3.png" alt="sitting area" className="object-cover object-center w-full" />
-                                            <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Catalog 2</h2>
-                                                <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Minimal Interior</h3>
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
+                                           
+                                            <div className="flex gap-2 flex-wrap">
+                                                <div>
+                                                    <img src="/images/christy.jpg" className="w-10 rounded-full"/>
+                                                </div>
+                                                <div className="grid text-left">
+                                                    <span className="font-semibold text-black block">Christy Ichella .</span>
+                                                    <span className="text-gray-800">Civil servant </span>
+                                                    <span className="text-gray-800">Rivers State</span>
                                                 </div>
                                             </div>
+                                            <div className="grid grid-cols-2 gap-2">
+                                            <span className="">4.5</span>
+                                            <span className=" pt-1"><img src="/images/star.png " className="w-4"/></span>
+
+                                            </div>
+                                      
                                         </div>
+                                        <div className="mt-4">
+                                         <p className="flex text-justify text-brandGreen">
+                                         “Property fx is the best system. It is uniquely designed to help you get Cash, lands and household Properties in the most simplest and affordable way. I am proud to say that I am immensely benefitting from this system. Sometimes, you have to make sacrifices to win with money. So, I want to encourage you all to register with Property fx and have a taste of the goodies.
+                                    
+                                         </p>
+                                        </div>
+                                    </div>
                                     </Slide>
                                     <Slide index={3}>
-                                        <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="/images/4.png" alt="sitting area" className="object-cover object-center w-full" />
-                                            <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Catalog 2</h2>
-                                                <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Minimal Interior</h3>
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
+                                           
+                                            <div className="flex gap-2 flex-wrap">
+                                                <div>
+                                                    <img src="/images/lucky.jpg" className="w-10 rounded-full"/>
+                                                </div>
+                                                <div className="grid text-left">
+                                                    <span className="font-semibold text-black block">Lucky Efi.</span>
+                                                    <span className="text-gray-800">System Analyst</span>
+                                                    <span className="text-gray-800">Rivers State</span>
                                                 </div>
                                             </div>
+                                            <div className="grid grid-cols-2 gap-2">
+                                            <span className="">4.5</span>
+                                            <span className=" pt-1"><img src="/images/star.png " className="w-4"/></span>
+
+                                            </div>
+                                      
                                         </div>
+                                        <div className="mt-4">
+                                         <p className="flex text-justify text-brandGreen">
+                                         “With PropertyFx: I feel on top of the world, I feel incredible, I feel motivated, I feel empowered. Join Pfx and experience the same feelings for yourself..
+                                    
+                                         </p>
+                                        </div>
+                                    </div>
                                     </Slide>
                                     <Slide index={4}>
-                                        <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="/images/5.png" alt="black chair and white table" className="object-cover object-center w-full" />
-                                            <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Catalog 2</h2>
-                                                <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Minimal Interior</h3>
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
+                                           
+                                            <div className="flex gap-2 flex-wrap">
+                                                <div>
+                                                    <img src="/images/udo.jpeg" className="w-10 rounded-full"/>
+                                                </div>
+                                                <div className="grid text-left">
+                                                    <span className="font-semibold text-black block">Mrs Udo Chika</span>
+                                                    <span className="text-gray-800">Teacher</span>
+                                                    <span className="text-gray-800">Rivers State</span>
                                                 </div>
                                             </div>
+                                            <div className="grid grid-cols-2 gap-2">
+                                            <span className="">4.5</span>
+                                            <span className=" pt-1"><img src="/images/star.png " className="w-4"/></span>
+
+                                            </div>
+                                      
                                         </div>
+                                        <div className="mt-4">
+                                         <p className="flex text-justify text-brandGreen">
+                                         “ProperFX has transformed me financially since I  signed up as an affiliate, with pfx, the sky is just the starting point and the best is yet to come!!!
+                                    
+                                         </p>
+                                        </div>
+                                    </div>
+                                    
                                     </Slide>
                                 </div>
                             </Slider>
@@ -280,15 +376,16 @@ const Trusted = () => {
                             <Slider>
                                 <div id="slider" className="h-full w-full flex gap-4 lg:gap-8 md:gap-6 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
-                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
                                     <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
                                            
                                             <div className="flex gap-2 flex-wrap">
                                                 <div>
-                                                    <img src="/images/customer1.png"/>
+                                                    <img src="/images/fenibo.jpeg" className="w-10 rounded-full"/>
                                                 </div>
                                                 <div className="grid text-left">
-                                                    <span className="font-semibold text-black block">Viezh Robert</span>
+                                                    <span className="font-semibold text-black block">Fenibo</span>
+                                                    <span className="text-gray-800">Software Engineer</span>
                                                     <span className="text-gray-800">Lagos</span>
                                                 </div>
                                             </div>
@@ -301,29 +398,23 @@ const Trusted = () => {
                                         </div>
                                         <div className="mt-4">
                                          <p className="flex text-justify text-brandGreen">
-                                         “Wow... I am very happy to use this Product, it turned out to be more than my expectations and so far there have been no problems.
+                                         “Pfxnet is worth investing in. I see great prospects with them
                                     
                                          </p>
                                         </div>
                                     </div>
-                                        
                                     </Slide>
                                     <Slide index={1}>
-                                        {/* <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="/images/2.png" alt="sitting area" className="object-cover object-center w-full" />
-                                            <div className="bg-white bg-opacity-30 absolute w-full h-full p-6">
-                                       
-                                            </div>
-                                        </div> */}
-                                        <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
+                                    <div className="grid rounded-lg border-2 py-8 px-4 max-w-sm max-h-52 h-52 overflow-y-auto transform hover:translate-x-4 hover:translate-y-4 hover:border-brandGreen ">
                                     <div className="flex flex-shrink-0 relative w-full sm:w-auto justify-between">
                                            
                                             <div className="flex gap-2 flex-wrap">
                                                 <div>
-                                                    <img src="/images/customer1.png"/>
+                                                    <img src="/images/chris.jpg" className="w-10 rounded-full"/>
                                                 </div>
                                                 <div className="grid text-left">
-                                                    <span className="font-semibold text-black block">Viezh Robert</span>
+                                                    <span className="font-semibold text-black block">Chris Chukwuemeka Mazi.</span>
+                                                    <span className="text-gray-800"> Engineer</span>
                                                     <span className="text-gray-800">Lagos</span>
                                                 </div>
                                             </div>
@@ -336,7 +427,7 @@ const Trusted = () => {
                                         </div>
                                         <div className="mt-4">
                                          <p className="flex text-justify text-brandGreen">
-                                         “Wow... I am very happy to use this Product, it turned out to be more than my expectations and so far there have been no problems.
+                                         “ PropertyFx is simply amazing, with their simplified process of acquiring lands and house hold property, I am already on my way to becoming a landlord and  with her unique and mutually beneficial Mono-line system my issue of cash is solved. I recommend you join and experience the success that comes with PropertyFx..
                                     
                                          </p>
                                         </div>
