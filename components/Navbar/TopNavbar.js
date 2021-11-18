@@ -63,14 +63,14 @@ const handleOpenMenu = (e)=>{
 {menuOpen == '1' && (
   <div className="bg-white w-screen shadow-md lg:hidden mt-32">
   <ul className="md:flex mx-auto font-heading font-semibold text-gray-500  ">
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2 hover:text-white "><Link href="#" className="mx-3" >Home</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="#" className="mx-3" >Property Trade</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="#" className="mx-3" >DEFI-Staking Trade</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="#" className="mx-3" >Crypto-Bot Trade</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="#" className="mx-3" >PFX-Apss</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="#" className="mx-3" >Affiliate Program</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="#" className="mx-3" >PFX Mall</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="#" className="ml-3" >Contact</Link></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2 hover:text-white "><Link href="/" className="mx-3" >Home</Link></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#propertyTrade" className="mx-3" >Property Trade</Link></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#propertyInves" className="mx-3" >DEFI-Staking Trade</Link></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#cryptoBot" className="mx-3" >Crypto-Bot Trade</Link></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#pfxAffiliate" className="mx-3" >PFX-Apss</Link></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#affiliateProgram" className="mx-3" >Affiliate Program</Link></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/mall" className="mx-3" >PFX Mall</Link></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#contact" className="ml-3" >Contact</Link></li>
         </ul>
     
   </div>
