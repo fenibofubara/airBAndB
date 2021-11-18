@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const Banner = () => {
     return ( 
         <>
@@ -6,7 +7,8 @@ const Banner = () => {
             {/* <img src="/images/bannerRegister.png" className="h-screen border-b border-gray-300"/> */}
             <div className="md:mx-80  border-gray-500  rounded-md shadow-md py-12 px-6 bg-white md:w-1/3  z-20">
             <div className="grid justify-center mt-4">
-            <img src="/images/logo.png" />
+            
+            <Link href='/'><a><img src="/images/logo.png"/></a></Link>
             </div>
             <div className="grid justify-center">
             <span className="text-brandGreen font-semibold uppercase ">PROCCESSING CONFIRMATION</span>

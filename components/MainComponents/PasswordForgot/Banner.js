@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import React, {createRef, useEffect,useState} from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import EasyHTTP from '../../../helpers/easyHttp'
+import Link from 'next/link'
 const simpleHttp =  new EasyHTTP()
 
 const Banner = () => {
@@ -36,7 +37,7 @@ simpleHttp.put('/api/passwordForgot',data)
            
             <div className="border-gray-500 mx-4   rounded-md shadow-md mb-40 mt-20 pb-10 px-6 bg-white md:w-1/2  z-20">
             <div className="grid justify-center mt-4">
-            <img src="/images/logo.png"/>
+            <Link href='/'><a><img src="/images/logo.png"/></a></Link>
             </div>
             <div className="grid justify-center mb-4 ">
             <span className="text-brandGreen font-semibold">Reset Password</span>

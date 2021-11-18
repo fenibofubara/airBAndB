@@ -2,19 +2,16 @@ import Head from 'next/head';
 import { useState,useEffect} from 'react';
 import Footer from "../components/Footer/Footer"
 import TopNavbar from "../components/Navbar/TopNavbar"
+import { useRouter } from 'next/router'
 
 
 const Layout = ({ children }) => {
-const [state, setstate] = useState(0)
-useEffect(() => {
-    const path = window.location.pathname
-    console.log(path,'pathhh')
-    if(path == '/register'){setstate(1)}
-    if(path == '/login'){setstate(1)}
-    if(path == '/passwordReset'){setstate(1)}
-    if(path == '/passwordForgot'){setstate(1)}
-    if(path == '/paymentConfirmation'){setstate(1)}
+const router = useRouter()
+const whichPath = router.pathname
+const noHeaderPaths = ['/register','/login','/passwordReset','/passwordForgot','/paymentConfirmation']
+const check = noHeaderPaths.includes(whichPath)
 
+useEffect(() => {
 const queryURL = window.location.search;
 const urlParams = new URLSearchParams(queryURL);
 const referralToken = urlParams.get('wl');
@@ -22,7 +19,7 @@ console.log(referralToken)
 localStorage.setItem('refToken', JSON.stringify(referralToken));
     
   
-}, [])
+},[])
 
   
 
@@ -34,7 +31,7 @@ localStorage.setItem('refToken', JSON.stringify(referralToken));
       </Head>
       <div className="body">
       <div className="content" id="content">
-      {state == '0' && ( <TopNavbar/>)}
+      {check == false   && ( <TopNavbar/>)}
             {children}
         <Footer/>
       </div>

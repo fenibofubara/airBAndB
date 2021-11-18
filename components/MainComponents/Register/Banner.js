@@ -106,7 +106,8 @@ const Banner = () => {
             <div className="flex flex-wrap justify-center bg-authBanner bg-no-repeat border-b border-gray-300">
             <div className="border-gray-500 mx-4   rounded-md shadow-md mb-10 mt-10 pb-10 px-6 bg-white md:w-1/2  z-20">
             <div className="grid justify-center my-4">
-            <img src="/images/logo.png"/>
+            <Link href='/'><a><img src="/images/logo.png"/></a></Link>
+            
             <span className="text-brandGreen font-semibold">Register</span>
             </div>
   <form className="" onSubmit={handleRegister} >

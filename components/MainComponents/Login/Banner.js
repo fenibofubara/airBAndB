@@ -10,7 +10,6 @@ if(process.env.NEXT_PUBLIC_NODE_ENV ==='development'){var office_url = process.e
 }else{var office_url = process.env.NEXT_PUBLIC_LIVE_OFFICE_URL}
 
 
-
 const Banner = () => {
   const [spinner, setspinner] = useState(false)
 const handleLogin = (e)=>{
@@ -54,7 +53,8 @@ simpleHttp.post('/api/login',data)
             {/* absolute top-6  */}
             <div className=" border-gray-500   rounded-md shadow-md mb-40 mt-10 pb-10 px-6 bg-white md:w-1/3  z-20">
             <div className="grid justify-center my-4">
-            <img src="/images/logo.png" />
+            <Link href='/'><a><img src="/images/logo.png"/></a></Link>
+            
             <span className="text-brandGreen font-semibold">Login</span>
             </div>
             <form className="" onSubmit={handleLogin}>

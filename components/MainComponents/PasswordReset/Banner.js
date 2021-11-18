@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import React, {createRef, useEffect,useState} from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import EasyHTTP from '../../../helpers/easyHttp'
+import Link from 'next/link'
 const simpleHttp =  new EasyHTTP()
 
 if(process.env.NEXT_PUBLIC_NODE_ENV ==='development'){var login_url = process.env.NEXT_PUBLIC_LOCAL_WELCOME_URL
@@ -52,7 +53,7 @@ simpleHttp.put('/api/passwordReset', data)
            
             <div className="border-gray-500 mx-4   rounded-md shadow-md mb-40 mt-20 pb-10 px-6 bg-white md:w-1/2  z-20">
             <div className="grid justify-center mt-4">
-            <img src="/images/logo.png"/>
+            <Link href='/'><a><img src="/images/logo.png"/></a></Link>
             </div>
             <div className="grid justify-center mb-4 ">
             <span className="text-brandGreen font-semibold">Enter New Password</span>
