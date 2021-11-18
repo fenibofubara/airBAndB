@@ -21,7 +21,7 @@ const handleOpenMenu = (e)=>{
 {/* relative  */}
 <header className="flex justify-between bg-white text-gray-500  shadow-md w-full z-50 fixed ">
       <div className="px-5 xl:px-3  flex w-full items-center justify-evenly">
-      <a className=" pt-4" href="/"><Image src="/images/logo.png" alt="logo" width={100} height={100}/>
+      <a className=" pt-4" href="/"><img src="/images/logo.png" alt="logo"/>
       </a>
       
    
