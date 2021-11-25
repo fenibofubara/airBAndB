@@ -1,8 +1,7 @@
-const data = [{id:1,image:'sunshine',title:'Sunshine City Estate',location:'Uzuaku, & Ipo, Port Harcourt.',area:'1,860,000sqm',price:'N2,000.00 per sqm',minimum:'25sqm.',tenor:'12 months.',roi:'30%'},{id:2,image:'sunshine',title:'Sunshine City Estate',location:'Uzuaku, & Ipo, Port Harcourt.',area:'1,860,000sqm',price:'N2,000.00 per sqm',minimum:'25sqm.',tenor:'12 months.',roi:'30%'},
-{id:3,image:'sunshine',title:'Sunshine City Estate',location:'Uzuaku, & Ipo, Port Harcourt.',area:'1,860,000sqm',price:'N2,000.00 per sqm',minimum:'25sqm.',tenor:'12 months.',roi:'30%'},
-{id:4,image:'sunshine',title:'Sunshine City Estate',location:'Uzuaku, & Ipo, Port Harcourt.',area:'1,860,000sqm',price:'N2,000.00 per sqm',minimum:'25sqm.',tenor:'12 months.',roi:'30%'},
-{id:5,image:'sunshine',title:'Sunshine City Estate',location:'Uzuaku, & Ipo, Port Harcourt.',area:'1,860,000sqm',price:'N2,000.00 per sqm',minimum:'25sqm.',tenor:'12 months.',roi:'30%'},
-{id:6,image:'sunshine',title:'Sunshine City Estate',location:'Uzuaku, & Ipo, Port Harcourt.',area:'1,860,000sqm',price:'N2,000.00 per sqm',minimum:'25sqm.',tenor:'12 months.',roi:'30%'}]
+const data = [{id:1,image:'pInvest1',title:'Sunshine City Estate',location:'Uzuaku, & Ipo, Port Harcourt.',area:'1,860,000sqm',price:'N2,000.00 per sqm',minimum:'25sqm.',tenor:'12 months.',roi:'30%'},
+{id:2,image:'pInvest2',title:'Sunshine City Estate',location:'Uzuaku, & Ipo, Port Harcourt.',area:'1,860,000sqm',price:'N2,000.00 per sqm',minimum:'25sqm.',tenor:'12 months.',roi:'30%'},
+{id:3,image:'pInvest3',title:'Sunshine City Estate',location:'Uzuaku, & Ipo, Port Harcourt.',area:'1,860,000sqm',price:'N2,000.00 per sqm',minimum:'25sqm.',tenor:'12 months.',roi:'30%'},
+{id:4,image:'pInvest4',title:'Sunshine City Estate',location:'Uzuaku, & Ipo, Port Harcourt.',area:'1,860,000sqm',price:'N2,000.00 per sqm',minimum:'25sqm.',tenor:'12 months.',roi:'30%'}]
 
 
 const Overview = () => {
@@ -12,7 +11,7 @@ const Overview = () => {
     {data.length !=0? (data.map((data,index)=>{
     return  <div className="md:flex border-1 shadow-md border-gray-500 rounded-md" key={data.id}>
              <div className="pt-3 px-3 ">
-             <img src={`/images/${data.image}.png`} className="w-full"/>
+             <img src={`/images/propertyInvest/${data.image}.jpeg`} className="w-60 md:transform hover:scale-150"/>
              </div>
              <div className="pt-3 px-3">
                 <h1 className="text-brandGreen font-semibold text-lg ">{data.title}</h1>

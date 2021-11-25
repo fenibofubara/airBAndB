@@ -29,7 +29,7 @@ const handleOpenMenu = (e)=>{
      
           <li><Link href="/"><a className="hover:text-gray-700 mx-3">Home</a></Link></li>
           <li><Link href="/#propertyTrade"><a className="hover:text-gray-700 mx-3">Property Trade</a></Link></li>
-          <li><Link href="/#propertyInvest"><a className="hover:text-gray-700 mx-3">DEFI-Staking Trade</a></Link></li>
+          <li><Link href="/#defi"><a className="hover:text-gray-700 mx-3">DEFI-Staking Trade</a></Link></li>
           <li><Link href="/#cryptoBot"><a className="hover:text-gray-700 mx-3">Crypto-Bot Trade</a></Link></li>
           <li><Link href="/#pfxAffiliate"><a className="hover:text-gray-700 mx-3">PFX-Apss</a></Link></li>
           <li><Link href="/#affiliateProgram"><a className="hover:text-gray-700 mx-3">Affiliate Program</a></Link></li>
