@@ -11,9 +11,9 @@ const Overview = () => {
     {data.length !=0? (data.map((data,index)=>{
     return  <div className="md:flex border-1 shadow-md border-gray-500 rounded-md" key={data.id}>
              <div className="pt-3 px-3 ">
-             <img src={`/images/propertyInvest/${data.image}.jpeg`} className="w-60 md:transform hover:scale-150"/>
+             <img src={`/images/propertyInvest/${data.image}.jpeg`} className="w-full md:transform hover:scale-100"/>
              </div>
-             <div className="pt-3 px-3">
+             {/* <div className="pt-3 px-3">
                 <h1 className="text-brandGreen font-semibold text-lg ">{data.title}</h1>
 <ul className="mx-0 px-0 text-brandGreen text-md pt-2 ">
 <li className=" flex mb-4 " > <span className="inline-block pr-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -40,7 +40,7 @@ const Overview = () => {
 </span></li>
 
 </ul>
-             </div>
+             </div> */}
          </div>
 
     })):<div>Null</div>}
