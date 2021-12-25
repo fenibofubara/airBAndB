@@ -1,6 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
+
+import * as Scroll from 'react-scroll';
+let ReactLink      = Scroll.Link;
 
 
 
@@ -8,14 +12,74 @@ import { useState } from 'react'
 
 
 const TopNavbar = ()=>{
-
+const router = useRouter()
 const [menuOpen, setMenuOpen] = useState(0)
+const [which, setWhich] = useState(true)
 
 const handleOpenMenu = (e)=>{
   e.preventDefault()
   if(menuOpen == 0){setMenuOpen(1)}
   if(menuOpen == 1){setMenuOpen(0)}
   }
+
+const handleAcademy = (e)=>{
+    e.preventDefault()
+    router.push('/academy')
+    setWhich(false)
+}
+
+const handleMall = (e)=>{
+    e.preventDefault()
+    router.push('/mall')
+    setWhich(false)
+}
+
+//
+
+const handlepropertyTrade = (e)=>{
+    e.preventDefault()
+    router.push('/#propertyTrade')
+    setWhich(true)
+}
+const handleDefi = (e)=>{
+    e.preventDefault()
+    router.push('/#defi')
+    setWhich(true)
+}
+const handlecryptoBot = (e)=>{
+    e.preventDefault()
+    router.push('/#cryptoBot')
+    setWhich(true)
+}
+
+const handlepfxAffiliate = (e)=>{
+    e.preventDefault()
+    router.push('/#pfxAffiliate')
+    setWhich(true)
+}
+const handleaffiliateProgram = (e)=>{
+    e.preventDefault()
+    router.push('/#affiliateProgram')
+    setWhich(true)
+}
+
+const handleSmallPTA = (e)=>{
+  e.preventDefault()
+  router.push('/academy')
+  
+}
+
+const handleSmallMall = (e)=>{
+  e.preventDefault()
+  router.push('/mall')
+  
+}
+
+//
+
+
+//
+
     return(
        <>
 {/* relative  */}
@@ -25,20 +89,32 @@ const handleOpenMenu = (e)=>{
       </a>
       
    
-        <ul className="hidden lg:flex mx-auto font-heading  ">
-     
-          <li><Link href="/"><a className="hover:text-gray-700 mx-3">Home</a></Link></li>
-          <li><Link href="/#propertyTrade"><a className="hover:text-gray-700 mx-3">Property Trade</a></Link></li>
-          <li><Link href="/#defi"><a className="hover:text-gray-700 mx-3">DEFI-Staking Trade</a></Link></li>
-          <li><Link href="/#cryptoBot"><a className="hover:text-gray-700 mx-3">Crypto-Bot Trade</a></Link></li>
-          <li><Link href="/#pfxAffiliate"><a className="hover:text-gray-700 mx-3">Apss</a></Link></li>
-          <li><Link href="/#affiliateProgram"><a className="hover:text-gray-700 mx-3">Affiliate</a></Link></li>
-          <li><Link href="/academy"><a className="hover:text-gray-700 ml-3">PTA</a></Link></li>
-          <li><Link  href="/mall"><a className="hover:text-gray-700 mx-3">Mall</a></Link></li>
-          <li><Link href="/#contact"><a className="hover:text-gray-700 ml-3">Contact</a></Link></li>
-          
-      
-        </ul>
+   {which === true?
+    <ul className="hidden lg:flex mx-auto font-heading">
+     <li className="nav-item"><ReactLink activeClass="active" to="banner" spy={true} smooth={true} offset={0} duration={2000}><a className="hover:text-gray-700 mx-3 cursor-pointer">Home</a></ReactLink></li>
+     <li className="nav-item"><ReactLink activeClass="active" to="propertyTrade" spy={true} smooth={true} offset={-110} duration={2000}><a className="hover:text-gray-700 mx-3 cursor-pointer">Property Trade</a></ReactLink></li>
+     <li className="nav-item"><ReactLink activeClass="active" to="defi" spy={true} smooth={true} offset={-40} duration={2000}><a className="hover:text-gray-700 mx-3 cursor-pointer">DEFI-Staking Trade</a></ReactLink></li>
+     <li className="nav-item"><ReactLink activeClass="active" to="cryptoBot" spy={true} smooth={true} offset={-40} duration={2000} ><a className="hover:text-gray-700 mx-3 cursor-pointer">Crypto-Bot Trade</a></ReactLink></li>
+     <li className="nav-item"><ReactLink activeClass="active" to="pfxAffiliate" spy={true} smooth={true} offset={-100} duration={2000}><a className="hover:text-gray-700 mx-3 cursor-pointer">Apss</a></ReactLink></li>
+     <li className="nav-item"><ReactLink activeClass="active" to="affiliateProgram" spy={true} smooth={true} offset={-100} duration={2000}><a className="hover:text-gray-700 mx-3 cursor-pointer">Affiliate</a></ReactLink></li>
+     <li onClick={handleAcademy}><Link href="/academy"><a className="hover:text-gray-700 ml-3">PTA</a></Link></li>
+     <li onClick={handleMall}><Link  href="/mall"><a className="hover:text-gray-700 mx-3 cursor-pointer">Mall</a></Link></li>
+     <li className="nav-item"><ReactLink activeClass="active" to="contact" spy={true} smooth={true} offset={-80} duration={2000}><a className="hover:text-gray-700 ml-3 cursor-pointer">Contact</a></ReactLink></li>
+   </ul>:null}
+
+
+   {which === false?
+    <ul className="hidden lg:flex mx-auto font-heading">
+     <li className="nav-item"><Link href="/"><a className="hover:text-gray-700 mx-3 cursor-pointer">Home</a></Link></li>
+     <li className="nav-item" onClick={handlepropertyTrade}><Link href="#"><a className="hover:text-gray-700 mx-3 cursor-pointer">Property Trade</a></Link></li>
+     <li className="nav-item" onClick={handleDefi}><Link href="#"><a className="hover:text-gray-700 mx-3 cursor-pointer">DEFI-Staking Trade</a></Link></li>
+     <li className="nav-item" onClick={handlecryptoBot}><Link href="#"><a className="hover:text-gray-700 mx-3 cursor-pointer">Crypto-Bot Trade</a></Link></li>
+     <li className="nav-item" onClick={handlepfxAffiliate}><Link href="#"><a className="hover:text-gray-700 mx-3 cursor-pointer">Apss</a></Link></li>
+     <li className="nav-item" onClick={handleaffiliateProgram}><Link href="#"><a className="hover:text-gray-700 mx-3 cursor-pointer">Affiliate</a></Link></li>
+     <li onClick={handleAcademy}><Link href="/academy"><a className="hover:text-gray-700 ml-3">PTA</a></Link></li>
+     <li onClick={handleMall}><Link  href="/mall"><a className="hover:text-gray-700 mx-3 cursor-pointer">Mall</a></Link></li>
+     <li className="nav-item"><Link href="/#contact"><a className="hover:text-gray-700 ml-3 cursor-pointer">Contact</a></Link></li>
+   </ul>:null}
        
         <div className=" flex  md:items-center md:space-x-1 md:mr-5 md:ml-5">
         <div className="text-brandGreen cursor-pointer md:border border-brandGreen  md:hover:bg-brandGreen md:hover:text-white ml-4 md:font-semibold md:py-3 md:px-8 md:rounded-md  md:text-xs md:tracking-wider"><Link href="login">Login</Link></div>
@@ -65,15 +141,15 @@ const handleOpenMenu = (e)=>{
 {menuOpen == '1' && (
   <div className="bg-white w-screen shadow-md lg:hidden mt-32">
   <ul className="md:flex mx-auto font-heading font-semibold text-gray-500  ">
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2 hover:text-white "><Link href="/" className="mx-3" >Home</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#propertyTrade" className="mx-3" >Property Trade</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#propertyInves" className="mx-3" >DEFI-Staking Trade</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#cryptoBot" className="mx-3" >Crypto-Bot Trade</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#pfxAffiliate" className="mx-3" >Apss</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#affiliateProgram" className="mx-3" >Affiliate</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/academy" className="mx-3" >PTA</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/mall" className="mx-3" >Mall</Link></li>
-          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white"><Link href="/#contact" className="ml-3" >Contact</Link></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2 hover:text-white cursor-pointer "><ReactLink activeClass="active" to="banner" spy={true} smooth={true} offset={0} duration={2000} className="mx-3" >Home</ReactLink></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white cursor-pointer"><ReactLink activeClass="active" to="propertyTrade" spy={true} smooth={true} offset={-110} duration={2000} className="mx-3" >Property Trade</ReactLink></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white cursor-pointer"><ReactLink activeClass="active" to="defi" spy={true} smooth={true} offset={-50} duration={2000} className="mx-3" >DEFI-Staking Trade</ReactLink></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white cursor-pointer"><ReactLink activeClass="active" to="cryptoBot" spy={true} smooth={true} offset={-50} duration={2000} className="mx-3" >Crypto-Bot Trade</ReactLink></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white cursor-pointer"><ReactLink activeClass="active" to="pfxAffiliate" spy={true} smooth={true} offset={-100} duration={2000}  className="mx-3" >Apss</ReactLink></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white cursor-pointer"><ReactLink activeClass="active" to="affiliateProgram" spy={true} smooth={true} offset={-100} duration={2000}  className="mx-3" >Affiliate</ReactLink></li>
+          <li onClick={handleSmallPTA} className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white cursor-pointer"><ReactLink className="mx-3" >PTA</ReactLink></li>
+          <li onClick={handleSmallMall} className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white cursor-pointer"><ReactLink className="mx-3" >Mall</ReactLink></li>
+          <li className="hover:bg-brandGreen flex py-2 text-center border-brandYellow border-b-2  hover:text-white cursor-pointer"><ReactLink activeClass="active" to="contact" spy={true} smooth={true} offset={-110} duration={2000}  className="ml-3" >Contact</ReactLink></li>
         </ul>
     
   </div>
