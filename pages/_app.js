@@ -1,16 +1,23 @@
-import '../styles/build/styles.css'
-import  "../styles/layout.css"
+import 'tailwindcss/tailwind.css'
+import '../styles/global.css'
+import "../styles/map.css";
+import ProgressBar from "@badrap/bar-of-progress";
+import Router from "next/router"
 
-import Layout from '../components/Layout'
-import '../public/fontawesome-free-5.13.0-web/css/all.css'
+const progress = new ProgressBar({
+  size:4,
+  color: "#FE595E",
+  className: "z-50",
+  delay: 100,
+})
+
+Router.events.on("routeChangeStart", progress.start);
+Router.events.on("routeChangeComplete", progress.finish);
+Router.events.on("routeChangeError", progress.finish);
 
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp

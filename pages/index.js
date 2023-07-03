@@ -1,85 +1,83 @@
 import Head from 'next/head'
-// import Layout from '../styles/Layout.module.css'
-// import  "../styles/layout.css"
-import Banner from '../components/MainComponents/Index/Banner/Banner'
-import Sliderr from '../components/MainComponents/Index/Slider/Slider'
-import PropertyTrade from '../components/MainComponents/Index/PropertyTrade/PropertyTrade'
-import PropertyInvest from '../components/MainComponents/Index/PropertyInvest/PropertyInvest'
-import DefiStaking from '../components/MainComponents/Index/DefiStaking/DefiStaking'
-import CryptoBot from '../components/MainComponents/Index/CryptoBot/CryptoBot'
-import PfxAffiliate from '../components/MainComponents/Index/PfxAffiliate/PfxAffiliate'
-import HowItWorks from '../components/MainComponents/Index/HowItWorks/HowItWorks'
-import ProductCategories from '../components/MainComponents/Index/ProductCategories/ProductCategories'
-import AffiliateProgram from '../components/MainComponents/Index/AffiliateProgram/AffiliateProgram'
-import HowItWorks2 from '../components/MainComponents/Index/HowItWorks2/HowItWorks2'
-import Activate from '../components/MainComponents/Index/Activate/Activate'
-import PaidAffiliate from '../components/MainComponents/Index/PaidAffiliate/PaidAffiliate'
-import Trusted from '../components/MainComponents/Index/Trusted/Trusted'
-import Contact from '../components/MainComponents/Index/Contact/Contact'
+import Banner from '../components/Banner'
+import Header from '../components/Header'
+import SmallCard from '../components/SmallCard';
+import MediumCard from '../components/MediumCard';
+import LargeCard from '../components/LargeCard';
+import Footer from '../components/Footer';
+const https = require('https');
 
-
-
-
-export default function Home() {
+export default function Home({ exploreData, cardsData }) {
   return (
-  
-  <>
-     <Head>
-        <title>Property Trade | Welcome</title>
-        <meta name='keywords' content='login'/>
-        <link rel="icon" href="/images/logo.png" />
-     </Head>
-   <section id="banner" >
-      <Banner/>
-    </section>
-      <section id="slider" className="md:mx-pfx">
-      <Sliderr/>
-    </section>
- <section id="propertyTrade" className="md:mx-pfx mx-4">
-      <PropertyTrade/>
-    </section>
-       <section id="propertyInvest">
-      <PropertyInvest/>
-    </section>
-    <section id="defi" className="md:mx-pfx mx-4">
-      <DefiStaking/>
-    </section>
-  <section id="cryptoBot" className="md:mx-pfx mx-4">
-      <CryptoBot/>
-    </section>
-    <section id="pfxAffiliate" className="md:mx-pfx mx-4">
-      <PfxAffiliate/>
-    </section>
-    <section id="how1" className="md:mx-pfx mx-4">
-      <HowItWorks/>
-    </section>
-  
-    <section id="productCategories" className="md:mx-pfx">
-      <ProductCategories/>
-    </section>
-   
-    <section id="affiliateProgram" className="md:mx-pfx mx-4">
-      <AffiliateProgram/>
-    </section>
-      <section id="how2" className="md:mx-pfx mx-4">
-      <HowItWorks2/>
-    </section>
-    <section id="activate" className="md:mx-pfx mx-4">
-      <Activate/>
-    </section>
-    <section id="paidAffiliate" className="md:mx-pfx mx-4">
-      <PaidAffiliate/>
-    </section>
-    <section id="trusted" className="md:mx-pfx" >
-      <Trusted/>
-    </section>
-    <section id="contact" className="md:p-pfx p-4">
-      <Contact/>
-    </section> 
-  
-  </>
+    <div className="">
+      <Head>
+        <title>Fenibo Fubara Airbnb</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
+      <Header />
+      <Banner />
 
-    
+      <main className="max-w-7xl mx-auto px-8 sm:px-16">
+        <section className="pt-6">
+          <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
+
+          {/* Pull the data from the server - static rendering for the front page */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {exploreData?.map(item => (
+            <SmallCard 
+            key={item.img}
+              img={item.img} 
+              distance={item.distance} 
+              location={item.location} 
+            />
+          ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
+          <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
+            {cardsData?.map(item => (
+              <MediumCard 
+              key={item.img}
+                img={item.img}
+                title={item.title}
+              />
+            ))}
+          </div>
+        </section>
+
+        <LargeCard 
+          img="https://links.papareact.com/4cj"
+          title="The Greatest Outdoors"
+          description="Wishlists curated by Airbnb"
+          buttonText="Get Inspired"
+        />
+      </main>
+
+      <Footer />
+      
+    </div>
   )
+}
+
+export async function getStaticProps() {
+  const agent = new https.Agent({
+  rejectUnauthorized: false
+});
+  const exploreData = await fetch('https://links.papareact.com/pyp', {agent})
+  .then(
+    (res) => res.json()
+  );
+
+  const cardsData = await fetch('https://links.papareact.com/zp1', {agent})
+  .then((res) => res.json()); 
+
+  return {
+    props: {
+      exploreData,
+      cardsData
+    }
+  }
 }
